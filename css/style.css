@@ -1,0 +1,166 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li, form, input, select, textarea, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+/* Header */
+header {
+  background-color: #0275d8;
+  color: #fff;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content */
+main {
+  max-width: 800px;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+
+form {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea, form select, form button {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #0275d8;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #025aa5;
+}
+
+/* Content blocks */
+#appointments-list div,
+#specialties-list div,
+#patients-list div,
+#doctors-list div {
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #0275d8;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  form input, form select, form textarea {
+    font-size: 1rem;
+  }
+}
+
+/* HERO Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.hero img {
+  /* max-width: 100%; */
+  height: 340px;
+  width: 100%;
+  border-radius: 8px;
+  animation: fadeInLeft 1s ease-in-out;
+}
+
+.hero-text {
+  max-width: 500px;
+  animation: fadeInRight 1s ease-in-out;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: #0275d8;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #025aa5;
+}
+
+/* Animations */
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}

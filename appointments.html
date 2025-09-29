@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Appointments | Clinic Booking</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Clinic Booking System</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="doctors.html">Doctors</a></li>
+        <li><a href="specialties.html">Specialties</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <li><a href="patients.html">Patients</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Book an Appointment</h2>
+    <form id="appointment-form">
+      <label for="date">Date:</label><br>
+      <input type="date" id="date" name="date" required><br><br>
+
+      <label for="prescription">Prescription:</label><br>
+      <textarea id="prescription" name="prescription" required></textarea><br><br>
+
+      <label for="doctor">Select Doctor:</label><br>
+      <select id="doctor" required></select><br><br>
+
+      <label for="patient">Select Patient:</label><br>
+      <select id="patient" required></select><br><br>
+
+      <button type="submit">Book Appointment</button>
+    </form>
+
+    <h2>All Appointments</h2>
+    <div id="appointments-list">Loading...</div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Clinic Booking System</p>
+  </footer>
+
+  <script type="module" src="js/appointments.js"></script>
+</body>
+</html>

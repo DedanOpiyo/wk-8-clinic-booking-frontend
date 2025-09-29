@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Patients | Clinic Booking</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Clinic Booking System</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="doctors.html">Doctors</a></li>
+        <li><a href="specialties.html">Specialties</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <li><a href="patients.html">Patients</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Register New Patient</h2>
+    <form id="patient-form">
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+      <button type="submit">Register Patient</button>
+    </form>
+
+    <h2>All Patients</h2>
+    <div id="patients-list">Loading...</div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Clinic Booking System</p>
+  </footer>
+
+  <script type="module" src="js/patients.js"></script>
+</body>
+</html>

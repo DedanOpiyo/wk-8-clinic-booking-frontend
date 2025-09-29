@@ -24,3 +24,28 @@ clinic-booking-frontend/
 │   └── images/              # Logos, icons, etc.
 ├── README.md
 ```
+## Pages overview
+### specialties.html – View All Specialties
+
+- Lists all specialties (from the /specialties GET endpoint).
+- Uses the same layout and styling for consistency.
+
+### appointments.html – View & Book Appointments
+
+#### Goals
+
+1. View all appointments (GET /appointments)
+
+2. Book a new appointment (POST /appointments)
+
+Form fields:
+
+- Date (input[type="date"])
+
+- Prescription (textarea)
+
+- Doctor (select)
+
+- Patient (select)
+
+3. Fetch doctor/patient options from API
