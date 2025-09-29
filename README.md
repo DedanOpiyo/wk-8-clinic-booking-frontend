@@ -4,7 +4,7 @@ It a static multipage frontend website that fetches data from your Node.js backe
 Deploy backend on Render, frontend on Vercel/Netlify.
 
 ## Deployment URL's
-Backend (node.js) is deployed in railway, alongside MySQL database: [clinic-booking-frontend.vercel.app](https://database-wk-8-complete-database-management-syste-production.up.railway.app)  
+Backend (node.js) is deployed in railway, alongside MySQL database: [database management production.up.railway](https://database-wk-8-complete-database-management-syste-production.up.railway.app)  
 Frontend is deployed in vercel: [clinic-booking-frontend.vercel.app](https://wk-8-clinic-booking-frontend.vercel.app/)
 
 ## Project Structure
@@ -62,4 +62,4 @@ The project demonstrates the 3 pillars of Javascript:
 - Javscript events
 - Communicating with the server
 
-Css styling and animation have also been incorporated alongside Html files representing pages.
+Css styling and animation have also been incorporated alongside html files. Each of the html files represents a page.
